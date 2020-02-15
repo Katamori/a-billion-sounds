@@ -1,8 +1,15 @@
-# a-billion-sounds
+# A Billion Sounds
 "A Billion Sounds": A Deep Space Blizzard short story (made with PhaserJS)
 
-# Tools
+**WARNING!** Documents in the `notes` folder contains enormous amount of spoilers! **Don't read any of these** if you want the full experience!
 
-Tiled for mapping
+# Development stacks
 
-Aseprite for graphisc
+Frameworks:
+* PhaserJS
+
+Mapping:
+* Tiled
+
+Graphics:
+* Aseprite
