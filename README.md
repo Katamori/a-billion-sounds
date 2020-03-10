@@ -33,7 +33,7 @@ Graphics:
 
 *Katamori*: story, core ideas, game design, levels
 
-*Atis1*: artwork and graphics, game design ideas
+[*Atis1*](https://www.instagram.com/atis0001/): artwork and graphics, game design ideas
 
 Miscellaneous help regarding the plot, worldbuilding, and design:
 
