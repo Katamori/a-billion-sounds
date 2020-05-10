@@ -6,9 +6,9 @@
 
 [Set in a unique post-apocalyptic cyberpunk world](https://katamori.github.io/deep-space-blizzard/index.html), it tells its story through the eyes of *Tony*, a mysterious ex-drifter who starts a new life by participating in the everyday work related to a famous underground nightclub, The Void Shard.
 
-"A Billion Sound" is my personal attempt to express my feelings, ideas and impressions (mostly) about interactions I personally experienced during various periods of my life - all within the confinements of a personally designed world with cyberpunk ideas and aesthetics. 
+"A Billion Sounds" is my personal attempt to express my feelings, ideas and impressions (mostly) about interactions I personally experienced during various periods of my life - all within the confinements of a personally designed world with cyberpunk ideas and aesthetics. 
 
-Being exceptionally story-driven, the project has a very slow pace as I try to make everything fit; moreover, I have very limited time to spend on this project AND actually producing tangible results in this repo. Thus, if you
+Being exceptionally story-driven, the project has a very slow pace as I try to make everything fit; moreover, I have very limited time to spend on this project AND actually producing tangible results in this repo.
 
 **ATTENTION!** Almost everything in this repository can be considered spoiler-heavy content. If you'd like to preserve immersion and/or are not examining the code for development purposes, be very careful!
 
@@ -18,16 +18,15 @@ Being exceptionally story-driven, the project has a very slow pace as I try to m
 
 A title screen.
 
+A Godot project with many sandboxing stuff that are particularly useless for outsiders yet.
+
 # Development stacks
 
-Frameworks:
-* PhaserJS
+The entirety of the game logic is defined, crafted and tested in Godot.
 
-Mapping:
-* Tiled
+For mapping, both Tiled and the built-in editor are used.
 
-Graphics:
-* Aseprite
+Graphics are made with Aseprite.
 
 # Credits
 
