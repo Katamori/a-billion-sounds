@@ -1,6 +1,6 @@
 # A Billion Sounds
 
-![](gfx/art/wall2-big.png?raw=true)
+![](./wall2-big.png?raw=true)
 
 **A Billion Sounds: A Deep Space Blizzard short story** is a graphical action-adventure game about subcultures, underground communities and the music industry. 
 
