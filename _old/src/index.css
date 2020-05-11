@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'slkscre';
+	src: url('slkscre.ttf') format('truetype');
+}
+
+body {
+	background-color: #111;
+	font-family: slkscre;
+}
