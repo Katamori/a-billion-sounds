@@ -24,8 +24,6 @@ A Godot project with many sandboxing stuff that are particularly useless for out
 
 The entirety of the game logic is defined, crafted and tested in Godot.
 
-For mapping, both Tiled and the built-in editor are used.
-
 Graphics are made with Aseprite.
 
 # Credits
