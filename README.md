@@ -36,6 +36,7 @@ Miscellaneous help regarding the plot, worldbuilding, and design:
 
 * Rothens
 * JustKrish
+* Delverdens (mostly art)
 
 # Contact
 

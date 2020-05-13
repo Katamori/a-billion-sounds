@@ -6,21 +6,10 @@ Point-and-click game
 * dialogues
 * a vage mission system
 
-Simple graphics
-* 16x16 px tiles
-* sprites keep the ratio
-* lineart
-* basic art direction: black background
-* shitload of animations
-* shitload of human poses
-* catchy art for interactables
-* chroma effect for objects with bigger z-depth
-
 Few levels
 * conditionally changing appearance
 * heavy use of not-bonded decorations
 * lots of events
-* made with Tiled
 * few decor tiles instead of full texturing
 
 A small slice of the world
@@ -33,8 +22,6 @@ Characters
 * type 3: gets impatient
 * type 4: temporary helpers
 * type 5: mission-critical characters
-* lots of portraits: show, don't tell
-* different color for non-subculture people
 
 # Details
 
@@ -71,6 +58,8 @@ Real music
 Misc
 * fix font size groups
 * extra camera offset to walking direction
+* if an object covers you, it's made translucent
+    * translucency depends on how much of a player is covered by the object sprite
 
 ## Items
 
@@ -93,3 +82,5 @@ Partial level render
 * Integrating minigames
 
 * Testing dream sequences
+
+* we should try to keep one item per tile
