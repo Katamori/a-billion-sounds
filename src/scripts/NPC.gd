@@ -6,7 +6,12 @@ export var character_name = "Name";
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$tag.text = character_name
-	pass # Replace with function body.
+	
+    # set modulate to that of parent
+    # todo: handle if parent is null or has no modulate
+	var baseMod = get_parent().get_modulate()
+	set_modulate(baseMod)
+	pass 
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
