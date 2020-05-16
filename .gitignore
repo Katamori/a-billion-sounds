@@ -28,7 +28,6 @@ target/
 
 # custom
 misc
-*.import
 *.md5
 *.stex
 fonts/

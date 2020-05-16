@@ -4,6 +4,4 @@
 
 [node name="Main" type="Node2D"]
 
-[node name="table" type="Sprite" parent="."]
-
 [node name="Demo" parent="." instance=ExtResource( 2 )]
