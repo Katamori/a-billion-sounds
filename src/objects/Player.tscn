@@ -8,3 +8,15 @@ script = ExtResource( 2 )
 
 [node name="Human" parent="." instance=ExtResource( 1 )]
 modulate = Color( 0.164706, 0.478431, 0.101961, 1 )
+
+[node name="pointer" type="Position2D" parent="Human"]
+
+[node name="camera" type="Camera2D" parent="Human/pointer"]
+scale = Vector2( 0.25, 0.25 )
+current = true
+process_mode = 0
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+editor_draw_screen = false
+editor_draw_drag_margin = true

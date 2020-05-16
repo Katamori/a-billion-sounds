@@ -1,12 +1,11 @@
 extends Node2D
 
-
 # Declare member variables here. Examples:
-# var a = 2
 var move_vector = Vector2(0, 0)
-var SPEED = 10000
+var SPEED = 15000
 
 onready var body = get_node("Human/kinematicBody2D")
+onready var camera_pointer = get_node("Human/pointer")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -20,6 +19,8 @@ func _process(delta):
 # Same as '_process' but with physics.
 func _physics_process(delta):
 	move_fluid(SPEED * delta)
+	
+	camera_pointer.set_position(body.get_position())
 	pass
 	
 func _input(event):
