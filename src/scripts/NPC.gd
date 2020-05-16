@@ -7,8 +7,8 @@ export var character_name = "Name";
 func _ready():
 	$tag.text = character_name
 	
-    # set modulate to that of parent
-    # todo: handle if parent is null or has no modulate
+	# set modulate to that of parent
+	# todo: handle if parent is null or has no modulate
 	var baseMod = get_parent().get_modulate()
 	set_modulate(baseMod)
 	pass 
