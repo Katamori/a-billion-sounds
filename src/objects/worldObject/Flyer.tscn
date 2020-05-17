@@ -6,9 +6,9 @@
 [node name="Flyer" type="Node2D"]
 scale = Vector2( 4, 4 )
 
-[node name="WorldObject" parent="." instance=ExtResource( 2 )]
+[node name="body" parent="." instance=ExtResource( 2 )]
 
-[node name="sprite" type="Sprite" parent="WorldObject"]
+[node name="sprite" type="Sprite" parent="body"]
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 9, 0, 8, 8 )

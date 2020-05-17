@@ -1,11 +1,21 @@
 extends Node2D
 
-# Declare member variables here. Examples:
-var move_vector = Vector2(0, 0)
+# player constants
 var SPEED = 15000
 
-onready var body = get_node("Human/kinematicBody2D")
+var PROX_THRESHOLD = 85
+
+# player state properties
+var move_vector = Vector2(0, 0)
+
+var can_interact = false
+
+
+# nodes from other parts of the applications
+onready var body = get_node("Human/body")
 onready var camera_pointer = get_node("Human/pointer")
+# todo: is it the only way?
+onready var props = get_tree().get_nodes_in_group("props")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,15 +28,34 @@ func _process(delta):
 	
 # Same as '_process' but with physics.
 func _physics_process(delta):
+	# basic movement and camera
 	move_fluid(SPEED * delta)
 	
 	camera_pointer.set_position(body.get_position())
-	pass
+	
+	look_for_interactions()
 	
 func _input(event):
 	if(event.is_action("toggle_inventory")):
 		print("toggle inventory")
 		
+# item proximity check
+# todo: find out if it's an optimal solution
+func look_for_interactions():
+	var had_nearby_prop = false
+	
+	for prop in props:
+		# todo: get rid of FCKING PREONCEPTIONS
+		var propBody = prop.get_node("body")
+
+		propBody.is_active = body.get_global_position().distance_to(prop.get_global_position()) < PROX_THRESHOLD
+		
+		# if even only one prop signals is_active, player can interact
+		had_nearby_prop = had_nearby_prop || propBody.is_active
+	pass
+	
+	can_interact = had_nearby_prop
+	pass
 
 func move_fluid(speed):
 	if(Input.is_action_pressed("move_up")):
