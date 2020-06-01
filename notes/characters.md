@@ -33,6 +33,7 @@ Chipcore musician
 * that brutally honest, slightly annoying punk
 * at least one one-night-stand for Tony
 * at least three bartenders
+* a "CDs are better than cassettes" guy, about who nobody gives a shit
 
 # Groups
 

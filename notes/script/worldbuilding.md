@@ -46,6 +46,10 @@ Rush EP Premiere Night
 NIGHT OF THE VALLEY
 [todo]
 
+## special flyers
+
+In the club, other locations and cultural events are also referred.
+
 # Misc info
 
 Sanctuary's currency is the Quartz.
@@ -61,6 +65,10 @@ In Sanctuary, coffee is state symbol. It's like kaviar: extremely expensive, but
 Many old world subcultures still exist; the most prominent of which are metalheads, punks, goths and synthwavers.
 
 Some are disappeared (emos) or ascended to mainstream (rappers).
+
+---------
+
+Valley people: founders of Neon Valley. Hippies with magic and stuff, but also get things done. Maybe cannibal past?
 
 # Sources
 

@@ -22,3 +22,4 @@
 * maybe a marketplace?
 * small, maybe even illegal festival on rural area
 * maybe a mountain visit?
+* party afteer closing

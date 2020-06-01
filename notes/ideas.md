@@ -121,3 +121,9 @@ ooh lehetne egy side quest hogy segíts bejutni egy underage csajnak a bárba
 Szukos vertical kocsma, also "asz vagy  nem asz"
 
 "Kezszaritasra a mikrot használd"
+
+
+
+a koncerttermek valószínűleg külön pályaszegmensek is lesznek mint egy RPG Maker-ben, és áttűnéssel mozogsz köztük
+
+és így megcsinálhatom olyan nagyra ami nekem kényelmes az ábrázolásmódhoz
