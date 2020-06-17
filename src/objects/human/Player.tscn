@@ -23,5 +23,5 @@ editor_draw_screen = false
 editor_draw_drag_margin = true
 
 [node name="interactionKeys" parent="Human/pointer" instance=ExtResource( 3 )]
-position = Vector2( -24, -24 )
+position = Vector2( -32, -32 )
 scale = Vector2( 0.25, 0.25 )

@@ -8,7 +8,7 @@ script = ExtResource( 1 )
 [node name="active" type="ColorRect" parent="."]
 margin_right = 64.0
 margin_bottom = 64.0
-color = Color( 1, 1, 1, 0.415686 )
+color = Color( 1, 1, 1, 0.666667 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -26,10 +26,10 @@ __meta__ = {
 }
 
 [node name="passive" type="ColorRect" parent="."]
-margin_left = 128.0
-margin_right = 192.0
+margin_left = 192.0
+margin_right = 256.0
 margin_bottom = 64.0
-color = Color( 1, 1, 1, 0.415686 )
+color = Color( 1, 1, 1, 0.666667 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -46,10 +46,10 @@ __meta__ = {
 }
 
 [node name="take" type="ColorRect" parent="."]
-margin_top = 128.0
+margin_top = 192.0
 margin_right = 64.0
-margin_bottom = 192.0
-color = Color( 1, 1, 1, 0.415686 )
+margin_bottom = 256.0
+color = Color( 1, 1, 1, 0.666667 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -67,11 +67,11 @@ __meta__ = {
 }
 
 [node name="talk" type="ColorRect" parent="."]
-margin_left = 128.0
-margin_top = 128.0
-margin_right = 192.0
-margin_bottom = 192.0
-color = Color( 1, 1, 1, 0.415686 )
+margin_left = 192.0
+margin_top = 192.0
+margin_right = 256.0
+margin_bottom = 256.0
+color = Color( 1, 1, 1, 0.666667 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

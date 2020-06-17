@@ -38,6 +38,11 @@ Miscellaneous help regarding the plot, worldbuilding, and design:
 * JustKrish
 * Delverdens (mostly art)
 
+## Used assets
+
+https://opengameart.org/content/16x16-town-remix
+
+
 # Contact
 
 I'm available on Telegram under the name [@katamorihun](https://t.me/katamorihun); the *de facto* discussion board of the game is [the "Into the Tonyverse" group.](https://t.me/joinchat/EZaOPQ-U_kbf02wBHLzS6w)
