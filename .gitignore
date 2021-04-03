@@ -31,3 +31,4 @@ misc
 *.md5
 *.stex
 fonts/
+*.import

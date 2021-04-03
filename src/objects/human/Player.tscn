@@ -1,18 +1,19 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://objects/Human.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scripts/Player.gd" type="Script" id=2]
+[ext_resource path="res://scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://objects/mixins/HumanBody.tscn" type="PackedScene" id=2]
 [ext_resource path="res://ui/InteractionKeys.tscn" type="PackedScene" id=3]
 
 [node name="Player" type="Node2D"]
-script = ExtResource( 2 )
+script = ExtResource( 1 )
 
-[node name="Human" parent="." instance=ExtResource( 1 )]
+[node name="body" parent="." instance=ExtResource( 2 )]
 modulate = Color( 0.266667, 0.435294, 0.164706, 1 )
 
-[node name="pointer" type="Position2D" parent="Human"]
+[node name="pointer" type="Position2D" parent="."]
+scale = Vector2( 4, 4 )
 
-[node name="camera" type="Camera2D" parent="Human/pointer"]
+[node name="camera" type="Camera2D" parent="pointer"]
 scale = Vector2( 0.25, 0.25 )
 current = true
 process_mode = 0
@@ -22,6 +23,6 @@ smoothing_enabled = true
 editor_draw_screen = false
 editor_draw_drag_margin = true
 
-[node name="interactionKeys" parent="Human/pointer" instance=ExtResource( 3 )]
+[node name="interactionKeys" parent="pointer" instance=ExtResource( 3 )]
 position = Vector2( -32, -32 )
 scale = Vector2( 0.25, 0.25 )

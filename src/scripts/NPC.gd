@@ -1,7 +1,12 @@
-extends Node2D
+extends Human
+class_name NPC
 
 # Name of the NPC character
-export var character_name = "Name";
+export var character_name: String;
+
+func _init():
+	character_name = "Name";
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

@@ -1,4 +1,5 @@
-extends Node2D
+extends Human
+class_name Player
 
 # player constants
 var SPEED = 15000
@@ -6,16 +7,20 @@ var SPEED = 15000
 var PROX_THRESHOLD = 85
 
 # player state properties
-var move_vector = Vector2(0, 0)
+var move_vector: Vector2
 
+# nodes from other parts of the applications
+onready var body = get_node("body")
+onready var camera_pointer = get_node("pointer")
+# todo: is it the only way?
+onready var props = get_tree().get_nodes_in_group("props")
+
+# inheritance override
 var can_interact = false
 
 
-# nodes from other parts of the applications
-onready var body = get_node("Human/body")
-onready var camera_pointer = get_node("Human/pointer")
-# todo: is it the only way?
-onready var props = get_tree().get_nodes_in_group("props")
+func _init():
+	move_vector = Vector2(0, 0)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -45,13 +50,10 @@ func look_for_interactions():
 	var had_nearby_prop = false
 	
 	for prop in props:
-		# todo: get rid of FCKING PREONCEPTIONS
-		var propBody = prop.get_node("body")
-
-		propBody.is_active = body.get_global_position().distance_to(prop.get_global_position()) < PROX_THRESHOLD
+		prop.is_active = body.get_global_position().distance_to(prop.get_global_position()) < PROX_THRESHOLD
 		
 		# if even only one prop signals is_active, player can interact
-		had_nearby_prop = had_nearby_prop || propBody.is_active
+		had_nearby_prop = had_nearby_prop || prop.is_active
 	pass
 	
 	can_interact = had_nearby_prop
